@@ -144,26 +144,82 @@ header {
   flex-direction: row;
 }
 
-.invisible {
+.invisible  {
   opacity: 0;
 }
 
 .invisible:hover {
   opacity: 1;
-  transition: all .2s ease;
+  transition: all .2s ease-in-out;
+}
+
+.visible {
+  position: absolute;
+  margin-top: 20px
+  opacity: 1;
+}
+
+.visible:hover {
+  opacity: 0;
+  transition: all .2s ease-in-out;
 }
 /* BREAK_01 END */
 
 /* DATE_01 START */
 .date {
   height: 1024px;
-  margin: 0 250px 0 250px;
+  margin: 200px 250px 0 250px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
+.date_year {
+  height: 600px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bot {
+  justify-content: flex-end;
+}
+
+.top {
+  justify-content: flex-start;
+}
+
+.date_text {
+  height: 600px;
+  width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.date_text h1 {
+  padding-bottom: 20px;
+}
+
+.date_text p {
+  padding-bottom: 50px;
+}
+
+.border {
+  border-top: 2px solid black;
+
+  padding-top: 50px;
+}
+/* DATE_01 END */
+
+
+.not {
+  padding-top: 50px;
+}
 .animated_scroll {
   top: 400px;
   left:700px;
@@ -176,6 +232,7 @@ header {
   z-index: -2;
 
 }
+/* BREAK_02 END */
 
 .date_still, .date_animated {
   margin-right: 50px;
