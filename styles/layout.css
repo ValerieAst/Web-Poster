@@ -71,17 +71,55 @@ p {
 }
 /* TYPOGRAPHY END */
 
+/* SCROLL ANIMATION STRART */
+.animated_scroll {
+  top: 400px;
+  left:700px;
+  /* height: 40%; */
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 
+  z-index: -2;
+
+}
+
+.date_animated {
+  margin-right: 50px;
+}
+
+.year1995 {
+  margin-bottom: -125px;
+}
+
+.year2017 {
+  margin-bottom: -250px;
+}
+
+.year1989 {
+  margin-bottom: -200px;
+}
+
+.year1976 {
+  margin-bottom: -150px;
+}
+/* SCROLL ANIMATION END */
 
 /* HEADER START */
 header {
   max-width: 100vw;
   height: 1024px;
+}
 
+.cover_img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 0px;
+  top: 0px;
 
-  background-image: url(images/cover.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .cover {
@@ -93,8 +131,9 @@ header {
 }
 /* HEADER END */
 
+/* BREAK_01 START */
 .break {
-  height: 1024px;
+  height: 512px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,4 +152,55 @@ header {
   opacity: 1;
   transition: all .2s ease;
 }
-/* BREAK_01 START */
+/* BREAK_01 END */
+
+/* DATE_01 START */
+.date {
+  height: 1024px;
+  margin: 0 250px 0 250px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.animated_scroll {
+  top: 400px;
+  left:700px;
+  /* height: 40%; */
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  z-index: -2;
+
+}
+
+.date_still, .date_animated {
+  margin-right: 50px;
+}
+
+.year1995 {
+  margin-bottom: -125px;
+}
+
+.year2017 {
+  margin-bottom: -250px;
+}
+
+.year1989 {
+  margin-bottom: -200px;
+}
+
+.year1976 {
+  margin-bottom: -150px;
+}
+
+/* ANIMATION START */
+
+
+
+
+
+/* ANIMATION END */
