@@ -1,5 +1,5 @@
 body {
-  background-color: #E4E0D4;
+  /* background-color: #E4E0D4; */
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -15,6 +15,10 @@ h1 {
 }
 
 .date h1 {
+  font-size: 2.25rem;
+}
+
+.footer h1 {
   font-size: 2.25rem;
 }
 
@@ -108,11 +112,12 @@ p {
 
 /* HEADER START */
 header {
-  max-width: 100vw;
+  /* max-width: 100vw; */
   height: 1024px;
 }
 
 .cover_img {
+  width: 110%;
   position: absolute;
   width: auto;
   height: auto;
@@ -171,25 +176,24 @@ header {
   margin: 200px 250px 0 250px;
 
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
 }
 
+.left {
+  flex-direction: row;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
 .date_year {
-  height: 600px;
+
   width: 450px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.bot {
-  justify-content: flex-end;
-}
-
-.top {
-  justify-content: flex-start;
 }
 
 .date_text {
@@ -214,6 +218,7 @@ header {
 
   padding-top: 50px;
 }
+
 /* DATE_01 END */
 
 
@@ -254,10 +259,69 @@ header {
   margin-bottom: -150px;
 }
 
-/* ANIMATION START */
+/* DATE HOVERS START */
+
+.bot {
+  margin-top: 340px;
+}
 
 
 
+.date_img {
+  position: absolute;
+  z-index: -1;
+}
 
+.img01 {
+  top: 1400px;
+  left: 140px;
+}
 
-/* ANIMATION END */
+.img02 {
+  top: 3200px;
+  left: -20px;
+}
+
+.img03 {
+  top: 5000px;
+  left: 500px;
+}
+
+.img04 {
+  top: 6700px;
+  left: 500px;
+}
+
+#a {
+  display: block;
+}
+
+#a:hover + #b {
+  display: block;
+  transition: all .3s ease;
+}
+
+#b {
+  display: none;
+}
+/* DATE HOVERS END */
+
+/* FOOTER START */
+footer {
+  height: 512px;
+
+  margin: 0 250px 50px 250px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer p, h1, h3 {
+  margin-bottom: 20px;
+}
